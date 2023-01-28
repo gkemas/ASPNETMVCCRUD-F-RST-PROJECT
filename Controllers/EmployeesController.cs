@@ -22,8 +22,8 @@ namespace ASPNETMVC.Controllers
             var employees = await mvcDemoDbContext.Employees.ToListAsync();
             return View(employees);
         }
-        [HttpGet] 
-        public IActionResult Add() 
+        [HttpGet]
+        public IActionResult Add()
         {
             return View();
         }
